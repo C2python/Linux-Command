@@ -51,8 +51,9 @@ virtualBox；Centos7 64bit；xshell。
 `gpgkey=https://download.ceph.com/keys/release.asc`   
 
 安装ceph-deploy:`yum update && yum install ceph-deploy`  
-**admin节点上的ceph-deploy安装完成**
+**admin节点上的ceph-deploy安装完成**  
 同时将所有节点中的selinux设为permissive。在文件`/etc/selinux/config`中。  
+
 **iptables设置**  
 针对监视器，需要打开6789端口，同时删除拒绝除 SSH 之外的所有网卡的所有入栈连接的规则如下：  
 `REJECT all -- anywhere anywhere reject-with icmp-host-prohibited`
