@@ -40,6 +40,7 @@ virtualBox；Centos7 64bit；xshell。
 \>`mv CentOS-Base.repo CentOS-Base.repo.bk`  
 \>`wget -o CentOS-Base.repo https://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/centos?codeblock=3`  
 \>`yum makecache`  
+
 设置ceph.repo的源，间文件`/etc/yum.repos.d/ceph.repo`，添加以下内容：  
 >`[ceph-noarch]`  
 `name=Ceph noarch packages`  
@@ -47,7 +48,8 @@ virtualBox；Centos7 64bit；xshell。
 `enabled=1`  
 `gpgcheck=1`  
 `type=rpm-md`  
-`gpgkey=https://download.ceph.com/keys/release.asc`  
+`gpgkey=https://download.ceph.com/keys/release.asc`   
+
 安装ceph-deploy:`yum update && yum install ceph-deploy`  
 **admin节点上的ceph-deploy安装完成**
 同时将所有节点中的selinux设为permissive。在文件`/etc/selinux/config`中。  
