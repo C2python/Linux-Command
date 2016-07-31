@@ -35,6 +35,13 @@ virtualBox；Centos7 64bit；xshell。
 >`192.168.34.4 osd1`  
 >`192.168.34.5 osd2`  
 
+**更改所有节点主机名**  
+\>`hostnamectl set-hostname {hostname}`  
+
+**更改visudo**  
+\>`sudo visudo`  
+\>`Defaults requiretty`注释掉。  
+
 ##更改源##
 将所有节点默认的源改成了科大的源：  
 \>`mv CentOS-Base.repo CentOS-Base.repo.bk`  
