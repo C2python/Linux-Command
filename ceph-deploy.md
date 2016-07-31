@@ -1,4 +1,4 @@
-#Ceph的安装#
+#[Ceph的安装](http://www.centoscn.com/CentosServer/test/2015/0521/5489.html)#
 --------------------------------------
 准备工作：  
 virtualBox；Centos7 64bit；xshell。  
